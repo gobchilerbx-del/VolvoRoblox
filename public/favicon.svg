@@ -1,0 +1,32 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="32" fill="url(#paint0_linear)" />
+  <path
+    d="M64 100c19.882 0 36-16.118 36-36S83.882 28 64 28 28 44.118 28 64s16.118 36 36 36Z"
+    stroke="white"
+    stroke-width="10"
+    fill="none"
+  />
+  <path d="M89 41h13v13" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <path
+    d="M92.5 35.5 110 18"
+    stroke="white"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <text
+    x="64"
+    y="71"
+    text-anchor="middle"
+    font-family="Montserrat, Inter, sans-serif"
+    font-size="20"
+    font-weight="700"
+    fill="white"
+  >VOLVO</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="14" y1="14" x2="114" y2="114" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1117" />
+      <stop offset="1" stop-color="#0E1A27" />
+    </linearGradient>
+  </defs>
+</svg>

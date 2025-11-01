@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A1119" />
+      <stop offset="100%" stop-color="#121E2B" />
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgba(0,68,124,0.7)" />
+      <stop offset="100%" stop-color="rgba(0,68,124,0.2)" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)" />
+  <rect x="120" y="90" width="400" height="220" rx="28" fill="rgba(191,198,208,0.08)" stroke="#00447C" stroke-width="2" />
+  <rect x="150" y="130" width="160" height="140" rx="18" fill="rgba(191,198,208,0.1)" stroke="#BFC6D0" stroke-width="1.5" />
+  <rect x="330" y="130" width="160" height="140" rx="18" fill="url(#card)" />
+  <polyline points="180,200 220,180 260,210" fill="none" stroke="#BFC6D0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M360 220c24-34 54-34 78-6" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" />
+  <circle cx="480" cy="140" r="22" fill="#00447C" />
+  <text x="140" y="70" fill="#ffffff" font-family="Montserrat" font-weight="600" font-size="28">Fleet Manager AI</text>
+  <text x="140" y="100" fill="#BFC6D0" font-family="Inter" font-size="16">Analítica en tiempo real · Telemetría</text>
+</svg>

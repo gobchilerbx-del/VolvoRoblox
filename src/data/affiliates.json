@@ -1,0 +1,29 @@
+[
+  {
+    "id": "aff-nordic-labs",
+    "name": "Nordic Mobility Labs",
+    "description": "Hub de I+D que codiseña sistemas eléctricos avanzados para flotas Volvo dentro de Roblox Studio.",
+    "robloxUrl": "https://www.roblox.com/groups/1234567890/Nordic-Mobility-Labs#!/about",
+    "discordUrl": "https://discord.gg/nordicmobility",
+    "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=240&q=80",
+    "createdAt": "2025-01-10T09:00:00.000Z"
+  },
+  {
+    "id": "aff-synthworks",
+    "name": "SynthWorks Studio",
+    "description": "Equipo creativo especializado en interiores premium y experiencias inmersivas con estándares Volvo.",
+    "robloxUrl": "https://www.roblox.com/groups/9876543210/SynthWorks-Studio#!/about",
+    "discordUrl": "https://discord.gg/synthworks",
+    "image": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=240&q=80",
+    "createdAt": "2025-01-12T14:32:00.000Z"
+  },
+  {
+    "id": "aff-volta-partners",
+    "name": "Volta Partners",
+    "description": "Consultora certificada en optimización de rendimiento y scripts de automatización para assets Volvo.",
+    "robloxUrl": "https://www.roblox.com/groups/2468101214/Volta-Partners#!/about",
+    "discordUrl": "https://discord.gg/voltapartners",
+    "image": "https://images.unsplash.com/photo-1516383607781-913a19294fd1?auto=format&fit=crop&w=240&q=80",
+    "createdAt": "2025-01-15T18:15:00.000Z"
+  }
+]

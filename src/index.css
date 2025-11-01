@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F7F8F9;
+  color: #0D1117;
+  font-family: 'Inter', 'Montserrat', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E8EAEC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003057;
+  border-radius: 999px;
+}

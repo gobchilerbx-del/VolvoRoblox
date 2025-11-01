@@ -1,0 +1,34 @@
+[
+  {
+    "id": "volvo-b13r-elite",
+    "name": "Volvo B13R Elite",
+    "price": 750,
+    "description": "Autobús de lujo optimizado para Roblox Studio con interiores modulares y scripts listos para rutas dinámicas.",
+    "image": "/assets/products/bus-9800.svg",
+    "createdAt": "2024-02-10T10:00:00.000Z"
+  },
+  {
+    "id": "polestar-xr",
+    "name": "Polestar XR Velocity Pack",
+    "price": 680,
+    "description": "Bundle de deportivos eléctricos con físicas avanzadas, iluminación volumétrica y telemetría en vivo.",
+    "image": "/assets/products/polestar-sim.svg",
+    "createdAt": "2024-03-15T09:30:00.000Z"
+  },
+  {
+    "id": "fleet-ia-control",
+    "name": "Fleet IA Control Board",
+    "price": 540,
+    "description": "Sistema administrativo para gestionar flotas con panel responsive y reportes en tiempo real.",
+    "image": "/assets/products/fleet-ai.svg",
+    "createdAt": "2024-04-01T16:45:00.000Z"
+  },
+  {
+    "id": "sound-design-kit",
+    "name": "Sound Design Kit Volvo",
+    "price": 220,
+    "description": "Colección premium de soundscapes y FX adaptados a motores híbridos y eléctricos Volvo.",
+    "image": "/assets/products/sound-pack.svg",
+    "createdAt": "2024-04-25T11:10:00.000Z"
+  }
+]

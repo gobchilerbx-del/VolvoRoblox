@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 638 638">
+  <circle cx="319" cy="319" r="319" fill="#ffffff" />
+  <circle cx="319" cy="319" r="244" fill="#0C1117" />
+  <path
+    d="M476.2 41.3 621.6 0l16 15.5L612 160.4l-29.6-1.4A319 319 0 0 0 638 319c0 176.2-142.8 319-319 319S0 495.2 0 319 142.8 0 319 0a319 319 0 0 1 157.2 41.3Z"
+    fill="#ffffff"
+  />
+  <rect x="87" y="279" width="464" height="80" fill="#ffffff" />
+  <rect x="107" y="299" width="424" height="40" fill="#0C1117" />
+  <text
+    x="319"
+    y="328"
+    fill="#0C1117"
+    font-family="Montserrat, 'Helvetica Neue', Arial"
+    font-size="120"
+    font-weight="700"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >VOLVO</text>
+</svg>
