@@ -82,7 +82,7 @@ function Panel() {
     }
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!form.name.trim() || !form.description.trim()) {
       setFormFeedback('Completa nombre y descripción.');
@@ -98,26 +98,32 @@ function Panel() {
       return;
     }
 
-    if (editing) {
-      updateProduct(editing.id, {
-        name: form.name,
-        description: form.description,
-        image: form.image,
-        price: priceValue
-      });
-      setFormFeedback('Producto actualizado.');
-    } else {
-      const created = addProduct({
-        name: form.name,
-        description: form.description,
-        image: form.image,
-        price: priceValue
-      });
-      setFormFeedback(`Producto "${created.name}" añadido.`);
+    try {
+      if (editing) {
+        await updateProduct(editing.id, {
+          name: form.name,
+          description: form.description,
+          image: form.image,
+          price: priceValue
+        });
+        setFormFeedback('Producto actualizado.');
+      } else {
+        const created = await addProduct({
+          name: form.name,
+          description: form.description,
+          image: form.image,
+          price: priceValue
+        });
+        setFormFeedback(`Producto "${created.name}" añadido.`);
+      }
+      resetForm();
+      setTimeout(() => setFormFeedback(''), 2200);
+    } catch (error) {
+      console.error(error);
+      setFormFeedback(
+        error instanceof Error ? error.message : 'No fue posible guardar el producto.'
+      );
     }
-
-    setTimeout(() => setFormFeedback(''), 2200);
-    resetForm();
   };
 
   const handleEdit = (product: Product) => {
@@ -133,10 +139,15 @@ function Panel() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleDelete = (product: Product) => {
+  const handleDelete = async (product: Product) => {
     const confirmed = window.confirm(`¿Eliminar ${product.name}?`);
     if (confirmed) {
-      deleteProduct(product.id);
+      try {
+        await deleteProduct(product.id);
+      } catch (error) {
+        console.error(error);
+        window.alert('No fue posible eliminar el producto.');
+      }
     }
   };
 

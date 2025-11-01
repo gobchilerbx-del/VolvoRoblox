@@ -5,7 +5,7 @@ import type { Affiliate } from '@/types';
 interface AffiliateCardProps {
   affiliate: Affiliate;
   canManage?: boolean;
-  onDelete?: (affiliate: Affiliate) => void;
+  onDelete?: (affiliate: Affiliate) => void | Promise<void>;
 }
 
 const motionConfig = {

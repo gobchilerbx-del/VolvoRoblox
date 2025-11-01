@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "node server/index.js"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
@@ -24,5 +25,9 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3",
     "vite": "^5.0.10"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

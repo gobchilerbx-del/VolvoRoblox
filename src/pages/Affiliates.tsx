@@ -26,7 +26,7 @@ function Affiliates() {
     image: string;
   }) => {
     try {
-      const created = addAffiliate(payload);
+      const created = await addAffiliate(payload);
       setModalOpen(false);
       setFeedback(`Afiliado “${created.name}” añadido correctamente.`);
       setTimeout(() => setFeedback(''), 2800);
@@ -37,12 +37,17 @@ function Affiliates() {
     }
   };
 
-  const handleDeleteAffiliate = (affiliate: Affiliate) => {
+  const handleDeleteAffiliate = async (affiliate: Affiliate) => {
     const confirmed = window.confirm(`¿Eliminar afiliado “${affiliate.name}”?`);
     if (!confirmed) return;
-    deleteAffiliate(affiliate.id);
-    setFeedback(`Afiliado “${affiliate.name}” eliminado.`);
-    setTimeout(() => setFeedback(''), 2800);
+    try {
+      await deleteAffiliate(affiliate.id);
+      setFeedback(`Afiliado “${affiliate.name}” eliminado.`);
+      setTimeout(() => setFeedback(''), 2800);
+    } catch (error) {
+      console.error(error);
+      window.alert('No fue posible eliminar el afiliado.');
+    }
   };
 
   return (

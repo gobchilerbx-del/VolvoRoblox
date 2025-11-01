@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "id": "fleet-ia-control",
+      "name": "Fleet IA Control Board",
+      "price": 540,
+      "description": "Sistema administrativo para gestionar flotas con panel responsive y reportes en tiempo real.",
+      "image": "/assets/products/fleet-ai.svg",
+      "createdAt": "2024-04-01T16:45:00.000Z"
+    }
+  ],
+  "affiliates": [
+    {
+      "id": "aff-b82a0383-4e30-4b52-bd00-02229e2c46a3",
+      "createdAt": "2025-11-01T05:12:46.546Z",
+      "name": "República de Chile",
+      "description": "¡Bienvenido a la República de Chile, una nación que se levanta sobre los valores de libertad, justicia y unidad nacional!",
+      "discordUrl": "https://discord.gg/yw58uDpKXb",
+      "robloxUrl": "https://www.roblox.com/es/communities/81029568/Rep-blica-de-Chile-Gobierno#!/about",
+      "image": "https://tr.rbxcdn.com/180DAY-2aa49b87fd8f660674a0490b04a632cd/150/150/Image/Webp/noFilter"
+    }
+  ]
+}

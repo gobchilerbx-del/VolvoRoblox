@@ -5,7 +5,7 @@ interface ProductCardProps {
   product: Product;
   variant?: 'catalog' | 'panel';
   onEdit?: (product: Product) => void;
-  onDelete?: (product: Product) => void;
+  onDelete?: (product: Product) => void | Promise<void>;
   onDetails?: (product: Product) => void;
   pricing?: {
     formattedPrice: string;

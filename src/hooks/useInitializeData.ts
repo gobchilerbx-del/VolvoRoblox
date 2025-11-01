@@ -2,9 +2,9 @@ import { useEffect } from 'react';
 import { useMarketplaceStore } from '@/store/useMarketplaceStore';
 
 export const useInitializeData = () => {
-  const loadProducts = useMarketplaceStore((state) => state.loadProducts);
+  const loadInitialData = useMarketplaceStore((state) => state.loadInitialData);
 
   useEffect(() => {
-    loadProducts();
-  }, [loadProducts]);
+    void loadInitialData();
+  }, [loadInitialData]);
 };
