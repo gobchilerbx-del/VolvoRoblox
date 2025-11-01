@@ -206,6 +206,13 @@ const server = createServer(async (req, res) => {
   const { pathname } = requestUrl;
 
   try {
+    // --- Respuesta raíz para evitar timeout en Render ---
+    if (req.method === 'GET' && pathname === '/') {
+      res.writeHead(200, { 'Content-Type': 'text/plain' });
+      res.end('Volvo Mobility Systems backend en línea ✅');
+      return;
+    }
+
     if (req.method === 'GET' && pathname === `${API_PREFIX}/products`) {
       sendJson(res, 200, sortByNewest(database.products));
       return;
